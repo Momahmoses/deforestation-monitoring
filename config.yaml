@@ -1,0 +1,32 @@
+project: Deforestation & Land Use Change Monitoring
+targets:
+  - Cross River State, Nigeria
+  - Congo Basin
+  - Niger Delta
+
+satellite:
+  source: Landsat-8 / Sentinel-2
+  temporal_resolution: 16  # days
+  baseline_year: 2015
+  current_year: 2024
+
+ndvi_thresholds:
+  dense_forest: 0.6
+  sparse_vegetation: 0.3
+  deforested: 0.1
+
+alert_thresholds:
+  area_ha: 10  # minimum patch size for alert
+  ndvi_change: -0.15  # drop that triggers alert
+
+model:
+  algorithm: RandomForest
+  n_estimators: 200
+  test_size: 0.2
+  random_state: 42
+
+output:
+  change_map: "outputs/deforestation_map.html"
+  alert_report: "outputs/deforestation_alerts.csv"
+  trend_chart: "outputs/ndvi_trend.png"
+  land_use_chart: "outputs/land_use_change.png"
