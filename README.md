@@ -3,13 +3,13 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Time-series satellite imagery analysis to track illegal logging, land encroachment, and deforestation across Cross River State, Congo Basin, and Niger Delta — generating automated alerts for forest rangers and policy makers.
+Time-series satellite imagery analysis to track illegal logging, land encroachment, and deforestation across Cross River State, Congo Basin, and Niger Delta, generating automated alerts for forest rangers and policy makers.
 
 ---
 
 ## Problem Statement
 
-Nigeria loses ~350,000 hectares of forest annually — one of the world's worst deforestation rates. The Niger Delta mangroves and Cross River rainforests are critically threatened by illegal logging and agricultural encroachment. This system provides near-real-time detection and alert generation.
+Nigeria loses ~350,000 hectares of forest annually, one of the world's worst deforestation rates. The Niger Delta mangroves and Cross River rainforests are critically threatened by illegal logging and agricultural encroachment. This system provides near-real-time detection and alert generation.
 
 ---
 
@@ -18,7 +18,7 @@ Nigeria loses ~350,000 hectares of forest annually — one of the world's worst 
 | Feature | Description |
 |---------|-------------|
 | Multi-Year NDVI Analysis | Time-series 2015–2024 from Landsat-8 / Sentinel-2 |
-| Land-Use Classification | Random Forest — Forest / Vegetation / Agriculture / Deforested |
+| Land-Use Classification | Random Forest, Forest / Vegetation / Agriculture / Deforested |
 | Automated Alert Generation | Critical / High / Moderate severity alerts for rangers |
 | Forest Coverage Trends | Annual loss rates by region and forest type |
 | Change Detection Map | Interactive map with deforestation alert markers |
@@ -77,5 +77,5 @@ python main.py
 
 ## Author
 
-**Momah Moses** — Geospatial AI Engineer & Data Scientist
+**Momah Moses**, Geospatial AI Engineer & Data Scientist
 [GitHub](https://github.com/Momahmoses) · [Portfolio](https://momahmoses-ng-gis-portfolio.hf.space)
